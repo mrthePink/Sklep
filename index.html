@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+
+     <title>Sklep</title>
+     <meta name="description" content="Sklep">
+     <link rel="stylesheet" href="sklep.css">
+
+</head>
+
+<body>
+
+     <header>
+          <nav id="nawigacja">
+               <div class="nawigacja-element"><a href="index.html">Sklep</a></div>
+               <div class="nawigacja-element"><a href="index.html">Dostawa</a></div>
+               <div class="nawigacja-element"><a href="index.html">Rejestracja</a></div>
+               </ul>
+          </nav>
+     </header>
+     
+     <div id="main">
+     
+          <section id="produkty">
+          
+               
+               <div class="karta">
+                    <div class="zdjecie"><img src="Atari2600.jpg"></div>
+                    <div class="nazwa"><h3>Atari 2600</h3></div>
+                    <div class="stopka-produktu">
+                         <div class="cena-produktu">Cena: 399 PLN</div>
+                         <div class="przycisk-produktu"><button onclick="dodajProdukt('Atari 2600', 399)">Dodaj</button></div>
+                    </div>
+               </div>
+               
+               <div class="karta">
+                    <div class="zdjecie"><img src="atari.jpg"></div>
+                    <div class="nazwa"><h3>Atari 65 XE</h3></div>
+                    <div class="stopka-produktu">
+                         <div class="cena-produktu">Cena: 200 PLN</div>
+                         <div class="przycisk-produktu"><button onclick="dodajProdukt('Atari 65 XE', 599)">Dodaj</button></div>
+                    </div>
+               </div>
+               
+               <div class="karta">
+                    <div class="zdjecie"><img src="amiga.jpg"></div>
+                    <div class="nazwa"><h3>Amiga 600</h3></div>
+                    <div class="stopka-produktu">
+                         <div class="cena-produktu">Cena: 899 PLN</div>
+                         <div class="przycisk-produktu"><button onclick="dodajProdukt('Amiga 600', 899)">Dodaj</button></div>
+                    </div>
+               </div>
+               
+               <div class="karta">
+                    <div class="zdjecie"><img src="gameboy.jpg"></div>
+                    <div class="nazwa"><h3>Gameboy Color</h3></div>
+                    <div class="stopka-produktu">
+                         <div class="cena-produktu">Cena: 499 PLN</div>
+                         <div class="przycisk-produktu"><button onclick="dodajProdukt('Gameboy Color', 499)">Dodaj</button></div>
+                    </div>
+               </div>
+               
+               <div class="karta">
+                    <div class="zdjecie"><img src="zegarek.jpg"></div>
+                    <div class="nazwa"><h3>Zegarek z melodyjkami</h3></div>
+                    <div class="stopka-produktu">
+                         <div class="cena-produktu">Cena: 299 PLN</div>
+                         <div class="przycisk-produktu"><button onclick="dodajProdukt('Zegarek z melodyjkami', 299)">Dodaj</button></div>
+                    </div>
+               </div>
+               
+               <div class="karta">
+                    <div class="zdjecie"><img src="komputer.jpg"></div>
+                    <div class="nazwa"><h3>Miesięcznik Komputer, 06.1987 </h3></div>
+                    <div class="stopka-produktu">
+                         <div class="cena-produktu">Cena: 69 PLN</div>
+                         <div class="przycisk-produktu"><button onclick="dodajProdukt('Miesięcznik Komputer, 06.1987', 69)">Dodaj</button></div>
+                    </div>
+               </div>
+               
+          </section>
+     
+          <aside id="koszyk">
+               
+               <div id="podsumowanie-koszyka">
+                    <div id="kup"><button id="kup-koszyk">Kup</button></div>
+                    <div id="wyczysc"><button id="wyczysc-koszyk">Wyczyść</button></div>
+               </div>
+               <div id="cena-koszyka">0 PLN</div>
+               
+               <div id="pozycje-koszyka"></div>
+               
+          </aside>
+     
+     </div>
+
+     <script src="sklep.js"></script>
+</body>
+</html>
